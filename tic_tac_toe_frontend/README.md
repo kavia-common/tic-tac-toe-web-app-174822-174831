@@ -1,82 +1,40 @@
-# Lightweight React Template for KAVIA
+# Tic Tac Toe – Ocean Professional
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A modern, responsive Tic Tac Toe web app built with React. Uses a clean Ocean Professional theme with blue and amber accents, subtle gradients, rounded corners, and soft shadows.
 
-## Features
+## Quick Start
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+In the project directory:
 
-## Getting Started
+- npm install
+- npm start
 
-In the project directory, you can run:
+The app will be available at http://localhost:3000
 
-### `npm start`
+No backend required. Works fully offline.
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Play
 
-### `npm test`
+- The game starts with Player X.
+- Click a square to place your mark (X or O).
+- The status badge shows the current player, a winner, or a draw.
+- After a win or draw, moves are disabled.
+- Click Reset Game to start again.
+- Optional: Click Show History to time-travel to any previous move.
 
-Launches the test runner in interactive watch mode.
+## Accessibility
 
-### `npm run build`
+- Squares are buttons with aria-labels and keyboard focus outlines.
+- Status is readable via screen readers (aria-live enabled).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Scripts
 
-## Customization
+- npm start – Run the app in development mode.
+- npm test – Launch the test runner.
+- npm run build – Build for production.
 
-### Colors
+## Notes
 
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The app does not use any environment variables for gameplay.
+- Styling is contained in src/App.css and follows the Ocean Professional palette:
+  - Primary #2563EB, Secondary #F59E0B, Error #EF4444, Background #f9fafb, Surface #ffffff, Text #111827.
